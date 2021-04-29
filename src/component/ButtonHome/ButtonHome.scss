@@ -1,0 +1,17 @@
+@import "bootstrap";
+
+/* ------- customize primary buttons -------- */   
+$mynewcolor:#6e1111;
+
+
+.btn-primaryy {
+    @include button-variant($mynewcolor, darken($mynewcolor, 7.5%), darken($mynewcolor, 10%), lighten($mynewcolor,5%), lighten($mynewcolor, 10%), darken($mynewcolor,20%));
+}
+
+.btn-outline-primaryy {
+    @include button-outline-variant($mynewcolor, darken($mynewcolor,25%),  $mynewcolor);
+}
+.btn-outline-primaryy:hover {
+    background-color:transparent;
+    color:#6e1111;;
+}
