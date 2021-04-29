@@ -67,7 +67,7 @@ const AddTour = ({addNewTour}) => {
         </input>
         <input 
            type='text' 
-           placeholder='description' 
+           placeholder='URl image' 
            class='input-line full-width'
            value={image}
            onChange={(e) => setImage (e.target.value)} 

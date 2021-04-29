@@ -11,7 +11,7 @@ const Navbarr = ({nameSearch , setNameSearch}) => {
     <Navbar.Brand href="#home">Home</Navbar.Brand>
     </Link>
   <Nav className="mr-auto">
-   <Link to="/tours">
+   <Link to="/tours" >
     <Nav.Link href="#home">Our Tours</Nav.Link>
     </Link>
     <Link to="/addTour">

@@ -7,11 +7,11 @@ const TourDetails = (props) => {
     const tourFound = props.tours.find( (tour) => tour.name == props.match.params.title);
     console.log(tourFound)
     return (
-        <div> 
+        <div > 
                  <Link to="/">
                  <ButtonHome />
                     </Link>
-                    <div  style={{backgroundColor:'pink',width:'100%',height:'100%'}}>
+                    <div style={{backgroundColor:'pink', height:'1200px'}}>
                    <Card style={{ width: '40rem', marginLeft:'450px' }}>
                       <Card.Img variant="top" src={tourFound.image} />
                       <Card.Body>

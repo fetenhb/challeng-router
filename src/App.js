@@ -8,8 +8,6 @@ import TourList from './component/TourList/TourList'
 import AddTour from './component/AddTour/AddTour';
 import {BrowserRouter , Route, Link} from "react-router-dom"
 import TourDetails from './component/tourDetail/TourDetails'
-import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
-import Loader from "react-loader-spinner";
 
 function App() {
   const [tours, setTours] = useState([
@@ -76,8 +74,7 @@ function App() {
   let toursLength = (tab)=> { return tab.length;}
   console.log(toursLength(tours))
   const toggleVisibility = () => {
-    /* this.setState({ isVisibile: !this.state.isVisible }) */
-    setIsVisible(!isVisible);
+    setIsLoading(!isLoading);
   };
  
 

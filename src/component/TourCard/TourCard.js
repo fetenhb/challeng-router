@@ -1,9 +1,7 @@
 import React from 'react'
-import {Card, Button} from 'react-bootstrap';
 import {Link} from "react-router-dom"
 import './TourCard.scss'
 import ReactReadMoreReadLess from "react-read-more-read-less";
-import ButtonHome from '../ButtonHome/buttonHome'
 
 
 const TourCard = ({el,handleDelete,toursLength} ) => {
