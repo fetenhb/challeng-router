@@ -13,10 +13,14 @@ const TourList = (props) => {
               <ButtonHome />
            </Link>
     
-      <div style={{ backgroundColor:'pink'}} >
+      <div style={{ backgroundColor:'pink', height:'900px'}} >
 
    <div> <span style={{  borderBottom: '4px solid #F190AA', letterSpacing:'3px', fontSize:'35px',marginLeft:'680px'}} >Our tours</span></div>
-   {  show() &&<div> <button className='btn-not' style={{marginLeft:'720px', marginTop:'20px'}}> refresh</button> </div>}
+   {  show() && 
+             <div> 
+                 <button className='btn-not' style={{marginLeft:'720px', marginTop:'20px'}} onClick={props.refresh}> refresh</button> 
+            </div>
+             }
 
         <div style={{display:'flex', justifyContent:'space-around', flexWrap: 'wrap' , backgroundColor:'pink', marginTop:'20px'}} >
             
